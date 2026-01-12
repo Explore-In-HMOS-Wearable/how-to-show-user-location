@@ -1,6 +1,7 @@
-import { geoLocationManager } from "@kit.LocationKit";
-import { BusinessError } from "@kit.BasicServicesKit";
-import LocationUtil from "../utils/LocationUtil";
+import { geoLocationManager } from '@kit.LocationKit';
+import { BusinessError } from '@kit.BasicServicesKit';
+import LocationUtil from '../utils/LocationUtil';
+import { common } from '@kit.AbilityKit';
 
 @Entry
 @Component
@@ -46,7 +47,8 @@ struct Index {
       if (hasPermissions) {
         await this.showUserLocation();
       } else {
-        const granted = await LocationUtil.requestLocationPermissions();
+        const context = this.getUIContext().getHostContext() as common.UIAbilityContext;
+        const granted = await LocationUtil.requestLocationPermissions(context);
         if (granted) {
           await this.showUserLocation();
         }

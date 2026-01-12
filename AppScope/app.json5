@@ -1,6 +1,6 @@
 {
   "app": {
-    "bundleName": "com.hmosdemos.showuserlocation",
+    "bundleName": "com.hmosdemos.wearable.how_to_show_user_location",
     "vendor": "hmosdemos",
     "versionCode": 1000000,
     "versionName": "1.0.0",

@@ -6,15 +6,15 @@ This app is a lightweight HarmonyOS application that retrieves the user's curren
 
 # Preview
 
-
-<img src="./resources/img.png" width="25%">
+<div>
+ <img src="./screenshots/screenshot1.png" width="25%">
+</div>
 
 # Use Cases
 
 -  Real-time location fetching via `geoLocationManager`
 -  Displays latitude and longitude in human-readable format
 -  Optimized for **fast retrieval** using speed-priority location mode
-
 
 # Technology
 
@@ -49,12 +49,8 @@ entry/src/main/ets/
 ## Supported Device
 - Huawei Watch 5
 
-
 # License
 
-CalmTune is distributed under the terms of the MIT License.
+ShowUserLocation is distributed under the terms of the MIT License.
 
 See the [LICENSE](/LICENSE) for more information.
-
-
-
